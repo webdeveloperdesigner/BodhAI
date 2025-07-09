@@ -1,0 +1,349 @@
+[
+  {
+    "question": "What is the purpose of the 'defer' attribute in a <script> tag?",
+    "options": [
+      "It delays script execution until after the page has loaded",
+      "It makes the script execute before HTML parsing",
+      "It loads the script after user interaction",
+      "It prevents the script from running"
+    ],
+    "correctAnswer": "It delays script execution until after the page has loaded",
+    "explanation": "The 'defer' attribute allows HTML parsing to continue and runs the script after the document is fully parsed."
+  },
+  {
+    "question": "Which HTML tag is used for semantic grouping of content?",
+    "options": ["<div>", "<span>", "<section>", "<br>"],
+    "correctAnswer": "<section>",
+    "explanation": "<section> is a semantic element used to define sections of content."
+  },
+  {
+    "question": "Which pseudo-class targets every even child element?",
+    "options": [":odd", ":nth-child(even)", ":even", ":nth-of-type(even)"],
+    "correctAnswer": ":nth-child(even)",
+    "explanation": "The :nth-child(even) CSS pseudo-class targets every even child in a container."
+  },
+  {
+    "question": "Which property sets the stacking order of elements in CSS?",
+    "options": ["order", "index", "z-index", "layer"],
+    "correctAnswer": "z-index",
+    "explanation": "z-index controls the vertical stacking order of elements."
+  },
+  {
+    "question": "In JavaScript, what is the output of typeof null?",
+    "options": ["object", "null", "undefined", "function"],
+    "correctAnswer": "object",
+    "explanation": "This is a known JavaScript bug; typeof null returns 'object'."
+  },
+  {
+    "question": "Which method is used to stop propagation of an event in JavaScript?",
+    "options": ["event.preventDefault()", "event.stop()", "event.stopPropagation()", "event.block()"],
+    "correctAnswer": "event.stopPropagation()",
+    "explanation": "stopPropagation prevents further propagation of the current event."
+  },
+  {
+    "question": "What does useEffect in React replace?",
+    "options": ["componentWillUnmount", "componentDidUpdate", "componentDidMount", "All of the above"],
+    "correctAnswer": "All of the above",
+    "explanation": "useEffect in React can replace lifecycle methods depending on how it's used."
+  },
+  {
+    "question": "Which hook is used to manage form input state in React?",
+    "options": ["useContext", "useInput", "useState", "useReducer"],
+    "correctAnswer": "useState",
+    "explanation": "useState is used to manage simple local state such as form inputs."
+  },
+  {
+    "question": "What does the Node.js 'cluster' module do?",
+    "options": [
+      "Provides a CLI interface",
+      "Spawns new threads to handle tasks",
+      "Allows multi-core load balancing",
+      "Monitors memory leaks"
+    ],
+    "correctAnswer": "Allows multi-core load balancing",
+    "explanation": "The cluster module enables Node.js to take advantage of multi-core systems."
+  },
+  {
+    "question": "Which method reads a file synchronously in Node.js?",
+    "options": ["fs.read()", "fs.readFile()", "fs.readSync()", "fs.readFileSync()"],
+    "correctAnswer": "fs.readFileSync()",
+    "explanation": "fs.readFileSync() reads files synchronously in Node.js."
+  },
+  {
+    "question": "Which database does not support JOINs directly?",
+    "options": ["PostgreSQL", "MongoDB", "MySQL", "SQLite"],
+    "correctAnswer": "MongoDB",
+    "explanation": "MongoDB does not support JOINs like SQL databases; it uses embedded documents and $lookup."
+  },
+  {
+    "question": "In MongoDB, which command is used to find and sort documents?",
+    "options": ["find().sort()", "find().orderBy()", "select().sort()", "findSorted()"],
+    "correctAnswer": "find().sort()",
+    "explanation": "MongoDB's find() method can be chained with sort() to order results."
+  },
+  {
+    "question": "What does Firebase Firestore store data as?",
+    "options": ["Tables", "Documents in collections", "JSON strings", "Flat arrays"],
+    "correctAnswer": "Documents in collections",
+    "explanation": "Firestore uses a NoSQL structure: collections and documents."
+  },
+  {
+    "question": "Which Firebase service is best for file uploads?",
+    "options": ["Firestore", "Authentication", "Realtime Database", "Firebase Storage"],
+    "correctAnswer": "Firebase Storage",
+    "explanation": "Firebase Storage is optimized for storing and serving large files like images, videos, and documents."
+  },
+{
+    "question": "In React, what does the 'key' prop do?",
+    "options": [
+      "Specifies a unique identifier for each element in a list",
+      "Sets a shortcut key",
+      "Adds a hash-based security ID",
+      "Indicates primary props"
+    ],
+    "correctAnswer": "Specifies a unique identifier for each element in a list",
+    "explanation": "The 'key' helps React identify which items have changed, added, or removed in lists."
+  },
+  {
+    "question": "What is the correct way to connect a MongoDB database in Node.js using Mongoose?",
+    "options": [
+      "mongoose.link('url')",
+      "mongoose.connect('url')",
+      "mongo.use('url')",
+      "connectMongo('url')"
+    ],
+    "correctAnswer": "mongoose.connect('url')",
+    "explanation": "mongoose.connect() is used to establish a connection to MongoDB."
+  },
+  {
+    "question": "Which HTTP status code means 'Unprocessable Entity'?",
+    "options": ["422", "404", "401", "500"],
+    "correctAnswer": "422",
+    "explanation": "422 indicates that the server understands the request but can't process it due to validation errors."
+  },
+  {
+    "question": "How do you add a document with a custom ID in Firebase Firestore?",
+    "options": [
+      "setDoc(doc(collection(db, 'users'), 'customId'), data)",
+      "addDoc(collection(db, 'users'), data)",
+      "insertDoc('users', data)",
+      "pushDoc('users', data)"
+    ],
+    "correctAnswer": "setDoc(doc(collection(db, 'users'), 'customId'), data)",
+    "explanation": "setDoc with a doc reference lets you define custom document IDs."
+  },
+  {
+    "question": "What does the 'position: sticky' property do in CSS?",
+    "options": [
+      "Fixes the element to the viewport",
+      "Allows element to toggle between relative and fixed depending on scroll",
+      "Always keeps it at the bottom",
+      "Makes it unscrollable"
+    ],
+    "correctAnswer": "Allows element to toggle between relative and fixed depending on scroll",
+    "explanation": "Sticky positioning is a hybrid of relative and fixed, allowing an element to stick at a defined scroll position."
+  },
+  {
+    "question": "Which JavaScript method is used to combine all elements of an array into a string?",
+    "options": ["concat()", "join()", "map()", "reduce()"],
+    "correctAnswer": "join()",
+    "explanation": "The join() method joins all elements of an array into a single string."
+  },
+  {
+    "question": "What is the virtual DOM in React?",
+    "options": [
+      "A browser feature for faster rendering",
+      "An abstraction of the real DOM to optimize rendering",
+      "A plugin for debugging",
+      "A DOM clone stored in cache"
+    ],
+    "correctAnswer": "An abstraction of the real DOM to optimize rendering",
+    "explanation": "The virtual DOM helps React track changes and update only what's necessary."
+  },
+  {
+    "question": "In Node.js, which object is used to handle streaming data?",
+    "options": ["Stream", "Buffer", "Readable", "FileReader"],
+    "correctAnswer": "Stream",
+    "explanation": "Node.js streams are used to handle streaming data (Readable, Writable, Duplex, and Transform)."
+  },
+  {
+    "question": "Which HTTP method is idempotent?",
+    "options": ["POST", "PUT", "PATCH", "CONNECT"],
+    "correctAnswer": "PUT",
+    "explanation": "PUT is idempotent, meaning multiple identical requests have the same effect."
+  },
+  {
+    "question": "In MongoDB, what does the $in operator do?",
+    "options": [
+      "Filters documents matching any value from a list",
+      "Includes sub-documents",
+      "Indexes documents",
+      "Indicates nested relations"
+    ],
+    "correctAnswer": "Filters documents matching any value from a list",
+    "explanation": "$in checks if a field’s value matches any value in an array."
+  },
+  {
+    "question": "What is Firestore's pricing model based on?",
+    "options": ["Number of queries, data stored, and data transferred", "Only data stored", "Number of collections", "Size of database"],
+    "correctAnswer": "Number of queries, data stored, and data transferred",
+    "explanation": "Firestore bills based on reads/writes/deletes, storage, and bandwidth."
+  },
+  {
+    "question": "Which React hook should be used for expensive calculations?",
+    "options": ["useEffect", "useState", "useCallback", "useMemo"],
+    "correctAnswer": "useMemo",
+    "explanation": "useMemo caches the result of expensive functions between renders."
+  },
+  {
+    "question": "How can you prevent state updates on unmounted components in React?",
+    "options": [
+      "By using isMounted flags",
+      "By removing the component",
+      "Using setTimeout",
+      "It’s not possible"
+    ],
+    "correctAnswer": "By using isMounted flags",
+    "explanation": "Use ref-based flags or cleanups inside useEffect to prevent updates after unmount."
+  },
+  {
+    "question": "Which CSS unit is relative to the root element?",
+    "options": ["em", "vh", "rem", "%"],
+    "correctAnswer": "rem",
+    "explanation": "rem is based on the root element’s font-size, typically html."
+  },
+  {
+    "question": "What does the term SSR stand for in full stack apps?",
+    "options": ["Server Side Rendering", "Secure Static Rendering", "Server Storage Rendering", "Structured Side Rendering"],
+    "correctAnswer": "Server Side Rendering",
+    "explanation": "SSR renders the initial HTML on the server instead of the browser."
+  },
+  {
+    "question": "Which keyword is used to handle exceptions in JavaScript?",
+    "options": ["throw", "catch", "try", "All of the above"],
+    "correctAnswer": "All of the above",
+    "explanation": "JavaScript uses try...catch...finally and throw to manage errors."
+  },
+  {
+    "question": "How can you deploy a Node.js app on Firebase Hosting?",
+    "options": [
+      "You can't",
+      "Use Firebase Functions and Hosting rewrites",
+      "Upload directly to Firestore",
+      "Install firebase-mongo CLI"
+    ],
+    "correctAnswer": "Use Firebase Functions and Hosting rewrites",
+    "explanation": "Firebase Hosting supports Node.js via Cloud Functions and rewrites."
+  },
+  {
+    "question": "Which HTTP header is used to allow cross-origin requests?",
+    "options": ["Access-Control-Allow-Origin", "CORS-Allow-Origin", "Enable-CORS", "Cross-Allow"],
+    "correctAnswer": "Access-Control-Allow-Origin",
+    "explanation": "This header tells browsers to allow a resource from another domain."
+  },
+  {
+    "question": "Which lifecycle method is deprecated in React?",
+    "options": ["componentWillMount", "componentDidMount", "componentDidUpdate", "render"],
+    "correctAnswer": "componentWillMount",
+    "explanation": "componentWillMount is deprecated in favor of constructors or useEffect."
+  },
+  {
+    "question": "In JavaScript, how is lexical scope defined?",
+    "options": [
+      "By variable names",
+      "By where functions and blocks are written in code",
+      "By object references",
+      "By closures only"
+    ],
+    "correctAnswer": "By where functions and blocks are written in code",
+    "explanation": "Lexical scope is determined at compile time based on nesting."
+  },
+  {
+    "question": "How do you store arrays in Firestore?",
+    "options": ["As comma-separated strings", "As embedded objects", "As arrays", "As map objects"],
+    "correctAnswer": "As arrays",
+    "explanation": "Firestore supports native arrays with arrayUnion, arrayRemove, etc."
+  },
+  {
+    "question": "What is the main advantage of using BEM in CSS?",
+    "options": ["It shortens code", "It avoids specificity issues", "It increases global style scope", "It compresses CSS"],
+    "correctAnswer": "It avoids specificity issues",
+    "explanation": "BEM helps organize and avoid naming conflicts using block__element--modifier."
+  },
+  {
+    "question": "Which array method returns a new array without modifying the original?",
+    "options": ["push()", "pop()", "map()", "splice()"],
+    "correctAnswer": "map()",
+    "explanation": "map() returns a new array while applying a function to each element."
+  },
+  {
+    "question": "In React Router v6, which component is used to define nested routes?",
+    "options": ["<Route /> with children", "<Outlet />", "<Link />", "<NestedRoute />"],
+    "correctAnswer": "<Outlet />",
+    "explanation": "<Outlet /> renders the matching nested route component in v6."
+  },
+  {
+    "question": "What does the middleware function in Express.js receive?",
+    "options": ["req, res", "res, next", "req, res, next", "next, req, res"],
+    "correctAnswer": "req, res, next",
+    "explanation": "Express middleware receives (req, res, next) to process and forward."
+  },
+  {
+    "question": "Which command is used to globally install a package in Node.js?",
+    "options": ["npm install", "npm add", "npm i -g", "node install"],
+    "correctAnswer": "npm i -g",
+    "explanation": "The -g flag installs the package globally."
+  },
+  {
+    "question": "How do you query nested fields in Firestore?",
+    "options": ["Use dot notation", "Use array syntax", "Use ref.query()", "Use JSON.stringify()"],
+    "correctAnswer": "Use dot notation",
+    "explanation": "Dot notation (e.g., 'profile.name') is used to query nested fields."
+  },
+  {
+    "question": "Which operator in MongoDB updates a field if it exists or inserts a new one?",
+    "options": ["$addToSet", "$set", "$upsert", "$update"],
+    "correctAnswer": "$upsert",
+    "explanation": "$upsert is not an operator but a flag with update to insert-or-update."
+  },
+  {
+    "question": "What is hydration in React?",
+    "options": [
+      "Rehydrating CSS styles",
+      "Reactivating static HTML with JavaScript",
+      "Initializing state from API",
+      "Combining Redux and React"
+    ],
+    "correctAnswer": "Reactivating static HTML with JavaScript",
+    "explanation": "Hydration occurs when React attaches events to server-rendered HTML."
+  },
+  {
+    "question": "Which HTML element is best suited for accessibility?",
+    "options": ["<div>", "<span>", "<article>", "<b>"],
+    "correctAnswer": "<article>",
+    "explanation": "<article> provides semantic structure helpful for screen readers."
+  },
+  {
+    "question": "How do you enable offline persistence in Firebase Firestore (Web)?",
+    "options": ["firebase.enableOffline()", "enablePersistence(db)", "db.setOffline(true)", "db.cache(true)"],
+    "correctAnswer": "enablePersistence(db)",
+    "explanation": "enablePersistence() turns on local caching for Firestore."
+  },
+  {
+    "question": "Which Node.js global object is used to buffer binary data?",
+    "options": ["Binary", "Buffer", "Stream", "DataView"],
+    "correctAnswer": "Buffer",
+    "explanation": "The Buffer class in Node.js is used to handle binary data."
+  },
+  {
+    "question": "What does the 'display: contents' CSS property do?",
+    "options": [
+      "Makes content invisible",
+      "Ignores box model of the element",
+      "Displays children without wrapper element",
+      "Applies flex by default"
+    ],
+    "correctAnswer": "Displays children without wrapper element",
+    "explanation": "It makes the element disappear visually but keeps its children."
+  }
+]

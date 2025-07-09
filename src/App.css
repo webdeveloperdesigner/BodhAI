@@ -1,38 +1,258 @@
-.App {
-  text-align: center;
+/* VARIABLES */
+:root {
+  --primary: #4f46e5;
+  --gradient: linear-gradient(to right, #6366f1, #4f46e5);
+  --bg: #f4f7fa;
+  --bg-dark: #1e1f26;
+  --light-bg: #f9fafc;
+  --text-main: #1a1a1a;
+  --text-sub: #4b5563;
+  --text-light: #ffffff;
+  --card-bg: #ffffff;
+  --card-dark: #1f2937;
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  --radius: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* BASE */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  background: var(--light-bg);
+  color: var(--text-main);
+  transition: background 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* WRAPPER */
+.app-wrapper,
+.bodhai-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 3rem 2rem;
+  min-height: 100vh;
+  background: var(--gradient);
   color: white;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+/* HEADER */
+.app-header,
+.branding-section {
+  margin-bottom: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.logo,
+.app-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -1px;
+  background: -webkit-linear-gradient(left, #a78bfa, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.accent {
+  color: #a5b4fc;
+}
+
+.tagline,
+.app-tagline {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
+
+.app-slogan {
+  margin-top: 0.25rem;
+  font-size: 0.95rem;
+  color: #d1d5db;
+}
+
+/* MAIN CONTAINER */
+.main-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* AUTH / LOGIN / CARD STYLE */
+.card,
+.auth-section {
+  background: var(--card-bg);
+  color: var(--text-main);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 500px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* ---------- PRE-LOGIN FEATURE CARDS ---------- */
+.pre-login-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.pre-login-options .card {
+  background: var(--card-bg);
+  color: var(--text-main);
+  padding: 1.5rem 1.25rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.pre-login-options .card h2 {
+  font-size: 1.25rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pre-login-options .card p {
+  margin: 0.5rem 0 0;
+  color: var(--text-sub);
+  font-size: 0.95rem;
+}
+
+.pre-login-options .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ---------- POST-LOGIN FEATURE CARDS ---------- */
+.post-login-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.post-login-options .card {
+  background: var(--card-bg);
+  color: var(--text-main);
+  padding: 1.5rem 1.25rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.post-login-options .card h2 {
+  font-size: 1.25rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.post-login-options .card p {
+  margin: 0.5rem 0 0;
+  color: var(--text-sub);
+  font-size: 0.95rem;
+}
+
+.post-login-options .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+  margin-top: 2rem;
+}
+
+/* ABOUT SECTION */
+.about-bodhai {
+  margin: 3rem 0;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--text-main);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-bodhai h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.about-bodhai ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-bodhai li {
+  margin-bottom: 0.75rem;
+  font-size: 1.05rem;
+}
+
+.inspiration {
+  margin-top: 3rem;
+  text-align: center;
+  font-style: italic;
+  color: #dbeafe;
+}
+
+.inspiration blockquote {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.inspiration cite {
+  display: block;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #cbd5e1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .app-wrapper,
+  .bodhai-wrapper {
+    padding: 2rem 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .logo,
+  .app-title {
+    font-size: 2rem;
+  }
+
+  .tagline,
+  .app-tagline {
+    font-size: 1rem;
+  }
+
+  .card,
+  .auth-section {
+    padding: 1.5rem;
   }
 }

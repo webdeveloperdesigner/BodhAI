@@ -1,0 +1,130 @@
+:root {
+  --primary: #5c27fe;
+  --accent: #1cb5e0;
+  --success: #2e7d32;
+  --radius: 12px;
+  --shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  --card-bg: #ffffff;
+  --option-bg: #f9f9f9;
+  --text: #333;
+  --text-sub: #666;
+}
+
+/* ---------- CONTAINER ---------- */
+.mcq-test-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  font-family: "Segoe UI", sans-serif;
+  color: var(--text);
+}
+
+/* ---------- HEADER ---------- */
+.mcq-test-container h2 {
+  font-size: 2rem;
+  text-align: center;
+  background: linear-gradient(to right, var(--accent), var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+/* ---------- CARD ---------- */
+.mcq-question-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.mcq-question-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+/* ---------- OPTIONS ---------- */
+.mcq-options {
+  list-style: none;
+  padding-left: 0;
+}
+
+.mcq-options li {
+  margin-bottom: 1rem;
+}
+
+.mcq-option-label {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+  background-color: var(--option-bg);
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.mcq-option-label input[type="radio"] {
+  margin-right: 12px;
+}
+
+/* ---------- SELECTED / CORRECT / WRONG ---------- */
+.correct-answer {
+  background-color: #d0f2e7;
+  border-color: #38b000;
+}
+
+.wrong-answer {
+  background-color: #ffe0e0;
+  border-color: #ff3b3f;
+}
+
+/* ---------- EXPLANATION ---------- */
+.mcq-explanation {
+  margin-top: 1rem;
+  color: var(--text-sub);
+  font-size: 0.95rem;
+}
+
+/* ---------- SUBMIT BUTTON ---------- */
+.mcq-submit-btn {
+  background-color: var(--success);
+  color: white;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto 0;
+  display: block;
+  transition: background 0.3s ease;
+}
+
+.mcq-submit-btn:hover {
+  background-color: #1b5e20;
+}
+
+/* ---------- SCORE DISPLAY ---------- */
+.mcq-score-display {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: var(--text-sub);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 600px) {
+  .mcq-test-container {
+    padding: 1rem;
+  }
+
+  .mcq-question-card {
+    padding: 1.2rem;
+  }
+
+  .mcq-submit-btn {
+    width: 100%;
+  }
+}
