@@ -1,4 +1,112 @@
-# Getting Started with Create React App
+# Bodhai
+
+Live: [https://bodhai.pages.dev/](https://bodhai.pages.dev/)
+
+## Changelog
+
+🔹 **v1.0.0 — MCQ Module Launch**  
+✅ `TestMCQ.js` with auto-score, accuracy, timer  
+✅ Admin quiz upload, Firestore result storage  
+✅ Result view with localStorage caching  
+
+🔹 **v0.0.9 — Login & Register UI Polish**  
+✅ Redesigned login & register forms  
+✅ Google and Email login flows complete  
+✅ `invitedBy` tracking via URL param  
+
+🔹 **v0.0.8 — Routing & Protected Pages**  
+✅ Private routes for authenticated users  
+✅ Invite page (`/invite?from=`) logic handled  
+
+🔹 **v0.0.7 — Result Views Setup**  
+✅ `MCQResult.js` with explanation and answer review  
+✅ Results saved in localStorage  
+
+🔹 **v0.0.6 — Admin Panel Enhancements**  
+✅ Grouped quizzes by topic  
+✅ Added metadata: topic, date, createdBy  
+✅ Quiz structure standardized for MCQ  
+
+🔹 **v0.0.5 — Styling & UX Polish**  
+✅ Modern font, card layout, branding  
+✅ Responsive home UI with New branding with “🧠 BodhAI” + Sanskrit quote  
+
+🔹 **v0.0.4 — Firebase Rules + MCQ Submit Logic**  
+✅ Firebase read/write access rules  
+✅ MCQ submission & local caching logic  
+
+**v0.0.3 — Basic Test Pages**  
+✅ Placeholder pages for MCQ and coding  
+✅ Timer & question navigation skeleton  
+
+**v0.0.2 — First Quiz Rendering**  
+✅ MCQs pulled live from Firebase  
+✅ Timer and local state for answers  
+✅ Basic UI for quiz rendering  
+✅ Score calculated on submit  
+
+**v0.0.1 — Base Version**  
+✅ React + Firebase setup  
+✅ Firebase Auth + Plain CSS  
+✅ Dashboard routing with default Home  
+
+---
+
+## About Bodhai
+
+**Bodhai** is an AI-powered practice platform for MCQs and coding challenges. It helps you sharpen your skills with live quizzes, instant scoring, and analytics. Designed for students, job-seekers, and anyone preparing for technical interviews or competitive exams.
+
+---
+
+## Features
+
+- 📝 **Practice MCQs**: Curated questions across Quant, Logic, Verbal, and Tech, with explanations.
+- 💻 **Coding Challenges**: Attempt coding problems with a built-in editor (mock logic for now).
+- 🔥 **Live Quizzes**: MCQs are fetched live from Firebase; new quizzes can be added by admins.
+- ⏱️ **Timer & Navigation**: Quiz timer and question navigation skeleton implemented.
+- 📊 **Results & Analytics**: View your scores, accuracy, and test history.
+- 🧑‍💻 **Google Auth**: Secure login with Google.
+- 🛠️ **Admin Panel**: Upload MCQs manually, via JSON, or generate with Gemini AI (admin only).
+- 📨 **Invite Friends**: Share invite links and challenge your friends.
+- 🌐 **Deployed on Cloudflare Pages**: Fast, global access.
+
+---
+
+## How It Works
+
+1. **Login**: Sign in with Google to access the dashboard.
+2. **Dashboard**: Choose to start an MCQ or coding test, view results, or invite friends.
+3. **MCQ Test**: Answer questions, submit, and get instant feedback with explanations.
+4. **Coding Test**: (Mock) Write and submit code for coding challenges.
+5. **Results**: Track your performance and accuracy over time.
+6. **Admin**: (If admin) Upload or generate new questions for everyone.
+
+---
+
+## Tech Stack
+
+- **Frontend**: React, CSS
+- **Backend**: Firebase (Auth, Realtime Database, Firestore)
+- **AI Generation**: API (for admins, via backend)
+- **Deployment**: Cloudflare Pages
+
+---
+
+## Contribution
+
+Want to contribute?  
+- Fork the repo and submit a PR.
+- For feature requests or bug reports, open an issue.
+
+---
+
+## Screenshots
+![BodhAI Homepage](image.png)
+<!-- Add screenshots here if available -->
+![BodhAI result Dashbord](image-1.png)
+---
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

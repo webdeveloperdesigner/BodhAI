@@ -1,0 +1,155 @@
+:root {
+  --primary: #5c27fe;
+  --accent: #1cb5e0;
+  --light: #f3f4f6;
+  --border: #e5e7eb;
+  --text: #111827;
+  --muted: #6b7280;
+  --success: #10b981;
+  --danger: #ef4444;
+}
+
+/* ---------- CONTAINER ---------- */
+.admin-panel {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  font-family: "Segoe UI", sans-serif;
+  color: var(--text);
+}
+
+/* ---------- HEADINGS ---------- */
+.admin-panel h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.admin-panel h3 {
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.5rem;
+  color: var(--primary);
+}
+
+/* ---------- INPUT FIELDS ---------- */
+.admin-panel input[type="text"],
+.admin-panel input[type="file"],
+.admin-panel textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.admin-panel input[type="text"]::placeholder,
+.admin-panel textarea::placeholder {
+  color: var(--muted);
+}
+
+.admin-panel textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* ---------- BUTTONS ---------- */
+.admin-panel button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  margin: 8px 0;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.admin-panel button:hover {
+  background-color: #4724d6;
+}
+
+.admin-panel button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* ---------- INLINE OPTIONS ---------- */
+.option-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.option-inputs input {
+  width: 48%;
+  padding: 8px;
+  font-size: 14px;
+}
+
+/* ---------- MCQ PREVIEW ---------- */
+.mcq-preview {
+  margin-top: 1rem;
+}
+
+.mcq-preview li {
+  margin-bottom: 1rem;
+  background-color: #f9fafb;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.mcq-preview li strong {
+  color: var(--text);
+}
+
+.mcq-preview ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 6px;
+}
+
+.mcq-preview ul li {
+  padding-left: 1rem;
+  position: relative;
+}
+
+.mcq-preview ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+
+.mcq-preview em {
+  display: block;
+  margin-top: 6px;
+  font-style: italic;
+  color: var(--muted);
+}
+
+/* ---------- HR ---------- */
+.admin-panel hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 1.5rem 0;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 600px) {
+  .option-inputs input {
+    width: 100%;
+  }
+
+  .admin-panel {
+    padding: 1rem;
+  }
+
+  .admin-panel h2 {
+    font-size: 1.5rem;
+  }
+}

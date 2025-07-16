@@ -1,0 +1,73 @@
+/* ---------- DASHBOARD WRAPPER ---------- */
+.dashboard-wrapper {
+  padding: 3rem 2rem;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+  background: var(--light-bg);
+  min-height: 100vh;
+}
+
+/* ---------- WELCOME HEADER ---------- */
+.dashboard-wrapper h2 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+/* ---------- DASHBOARD BUTTON GROUP ---------- */
+.dashboard-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-buttons button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: var(--shadow);
+}
+
+.dashboard-buttons button:hover {
+  background: #6366f1;
+  transform: translateY(-3px);
+}
+
+/* ---------- CONTENT DISPLAY AREA ---------- */
+.dashboard-content {
+  background: white;
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  min-height: 300px;
+  transition: all 0.3s ease;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 600px) {
+  .dashboard-buttons {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .dashboard-buttons button {
+    width: 100%;
+  }
+}
+
+/* ---------- INVITE PROMPT ---------- */
+.invite-prompt {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 8px;
+  color: #856404;
+  font-weight: bold;
+  text-align: center;
+}

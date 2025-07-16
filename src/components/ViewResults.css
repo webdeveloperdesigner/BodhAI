@@ -1,0 +1,109 @@
+:root {
+  --primary: #5c27fe;
+  --accent: #1cb5e0;
+  --success: #2e7d32;
+  --danger: #ff3b3f;
+  --info: #3b82f6;
+  --light-bg: #f9fafb;
+  --border: #e5e7eb;
+  --text: #333;
+  --subtle: #666;
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+.results-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+  font-family: "Segoe UI", sans-serif;
+  color: var(--text);
+}
+
+/* ---------- HEADING ---------- */
+.results-container h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  background: linear-gradient(to right, var(--accent), var(--primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+/* ---------- TABLE ---------- */
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* ---------- HEADER ---------- */
+.results-table thead {
+  background-color: var(--light-bg);
+}
+
+.results-table th {
+  padding: 12px;
+  font-size: 14px;
+  color: var(--subtle);
+  border-bottom: 1px solid var(--border);
+}
+
+/* ---------- BODY ---------- */
+.results-table td {
+  padding: 12px;
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.results-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* ---------- TYPE BADGE ---------- */
+.badge {
+  padding: 4px 10px;
+  font-size: 12px;
+  border-radius: 20px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.badge-mcq {
+  background-color: #dcfce7;
+  color: #065f46;
+}
+
+.badge-coding {
+  background-color: #dbeafe;
+  color: #1e3a8a;
+}
+
+/* ---------- MESSAGE / LOADER ---------- */
+.results-message {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+  color: var(--subtle);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 600px) {
+  .results-table th,
+  .results-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .results-container {
+    padding: 1rem;
+  }
+
+  .results-container h2 {
+    font-size: 1.5rem;
+  }
+}
